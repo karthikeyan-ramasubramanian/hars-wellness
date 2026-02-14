@@ -14,29 +14,28 @@
   <link href="assets/img/Har's_Favicon.png" rel="icon">
   <link href="assets/img/Har's_Favicon.png" rel="apple-touch-icon">
 
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com" rel="preconnect">
-  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+  <!-- Critical layout CSS (must block) -->
+<link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+<!-- Icons (small, safe to keep blocking) -->
+<link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+<link href="assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
 
-  <!-- Main CSS File -->
-  <link href="assets/css/main.css" rel="stylesheet">
+<!-- Load main design async -->
+<link rel="preload" href="assets/css/main.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="assets/css/main.css"></noscript>
 
-  <!-- =======================================================
-  * Template Name: MediNest
-  * Template URL: https://bootstrapmade.com/medinest-bootstrap-hospital-template/
-  * Updated: Aug 11 2025 with Bootstrap v5.3.7
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
+<!-- Page animation CSS async -->
+<link rel="preload" href="assets/vendor/aos/aos.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="assets/vendor/aos/aos.css"></noscript>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+
+ 
 </head>
 
 <body class="index-page">
@@ -103,7 +102,14 @@
         <div class="row align-items-center">
           <div class="col-lg-5">
             <div class="hero-image" data-aos="fade-right" data-aos-delay="100">
-              <img src="assets/img/Dr.Thamarai Photo.JPG" alt="Healthcare Professional" class="img-fluid main-image">
+              <img src="assets/img/Dr.Thamarai Photo.webp"
+     width="560"
+     height="620"
+     loading="eager"
+     decoding="async"
+     fetchpriority="high"
+     class="img-fluid main-image">
+
               <div class="floating-card emergency-card" data-aos="fade-up" data-aos-delay="300">
                 <div class="card-content">
                   <i class="bi bi-telephone-fill"></i>
@@ -212,7 +218,9 @@
           <div class="col-lg-7" data-aos="fade-right" data-aos-delay="200">
             <div class="image-grid">
               <div class="primary-image">
-                <img src="assets/img/w1.jpg" alt="Modern hospital facility" class="img-fluid">
+                <img src="assets/img/w1.jpg" alt="Modern hospital facility" class="img-fluid"
+     loading="lazy"
+     decoding="async">
                 <div class="certification-badge">
                   <i class="bi bi-award"></i>
                   <span>TNCEA Accredited</span>
@@ -220,10 +228,14 @@
               </div>
               <div class="secondary-images">
                 <div class="small-image">
-                  <img src="assets/img/w2.jpg" alt="Doctor consultation" class="img-fluid">
+                  <img src="assets/img/w2.jpg" alt="Doctor consultation" class="img-fluid"
+     loading="lazy"
+     decoding="async">
                 </div>
                 <div class="small-image">
-                  <img src="assets/img/w3.jpg" alt="Medical procedure" class="img-fluid">
+                  <img src="assets/img/w3.jpg" alt="Medical procedure" class="img-fluid"
+     loading="lazy"
+     decoding="async">
                 </div>
               </div>
             </div>
@@ -516,7 +528,7 @@
             <div class="service-card">
               
               <div class="service-image">
-                <img src="assets/img/Ayurveda.jpg" alt="Service" class="img-fluid" loading="lazy">
+                <img src="assets/img/Ayurveda.webp" alt="Service" class="img-fluid" loading="lazy">
               </div>
               <div class="service-content">
                 <h3>Ayurveda</h3>
@@ -529,7 +541,7 @@
             <div class="service-card">
               
               <div class="service-image">
-                <img src="assets/img/Naturopathy.jpg" alt="Service" class="img-fluid" loading="lazy">
+                <img src="assets/img/Naturopathy.webp" alt="Service" class="img-fluid" loading="lazy">
               </div>
               <div class="service-content">
                 <h3>Naturopathy</h3>
@@ -543,7 +555,7 @@
             <div class="service-card">
               
               <div class="service-image">
-                <img src="assets/img/Physiotherapy.jpg" alt="Service" class="img-fluid" loading="lazy">
+                <img src="assets/img/Physiotherapy.webp" alt="Service" class="img-fluid" loading="lazy">
               </div>
               <div class="service-content">
                 <h3>Physiotherapy</h3>
@@ -557,7 +569,7 @@
             <div class="service-card">
               
               <div class="service-image">
-                <img src="assets/img/Holistic Therapies.jpg" alt="Service" class="img-fluid" loading="lazy">
+                <img src="assets/img/Holistic Therapies.webp" alt="Service" class="img-fluid" loading="lazy">
               </div>
               <div class="service-content">
                 <h3>Holistic therapies</h3>
@@ -570,7 +582,7 @@
             <div class="service-card">
               
               <div class="service-image">
-                <img src="assets/img/yoga.jpg" alt="Service" class="img-fluid" loading="lazy">
+                <img src="assets/img/yoga.webp" alt="Service" class="img-fluid" loading="lazy">
               </div>
               <div class="service-content">
                 <h3>Yoga & Meditation</h3>
@@ -583,7 +595,7 @@
             <div class="service-card">
               
               <div class="service-image">
-                <img src="assets/img/facial therapies.jpg" alt="Service" class="img-fluid" loading="lazy">
+                <img src="assets/img/facial therapies.webp" alt="Service" class="img-fluid" loading="lazy">
               </div>
               <div class="service-content">
                 <h3>Aesthetic Treatments</h3>
@@ -782,18 +794,15 @@
   <!-- Preloader -->
   <div id="preloader"></div>
 
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
 
-  <!-- Main JS File -->
-  <script src="assets/js/main.js"></script>
+<!-- Core JS -->
+<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js" defer></script>
+
+<!-- Animation only (used in home) -->
+<script src="assets/vendor/aos/aos.js" defer></script>
+
+<!-- Main Script -->
+<script src="assets/js/main.js" defer></script>
 
 </body>
 

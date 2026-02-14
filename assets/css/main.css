@@ -62,6 +62,7 @@
 /*--------------------------------------------------------------
 # General Styling & Shared Classes
 --------------------------------------------------------------*/
+
 body {
   color: var(--default-color);
   background-color: var(--background-color);
@@ -794,7 +795,10 @@ section,
   box-shadow: 0 30px 80px color-mix(in srgb, var(--accent-color), transparent 80%);
   transform: rotate(-2deg);
   transition: all 0.3s ease;
-  margin-top: 35px;
+  margin-top: 45px;
+  background-color: #f3f6ef;
+  aspect-ratio: 5/6;
+  object-fit: cover;
 }
 
 .hero .hero-image .main-image:hover {
@@ -6504,3 +6508,4 @@ section,
       border-radius: 10px;
       margin: auto;
   }
+ 
