@@ -628,8 +628,8 @@ h6 {
   bottom: -15px;
   z-index: 99999;
   background-color: var(--accent-color);
-  width: 44px;
-  height: 44px;
+  width: 4px;
+  height: 4px;
   border-radius: 50px;
   transition: all 0.4s;
 }
@@ -648,7 +648,7 @@ h6 {
 .scroll-top.active {
   visibility: visible;
   opacity: 1;
-  bottom: 15px;
+  bottom: 23px;
 }
 
 /*--------------------------------------------------------------
@@ -6441,8 +6441,8 @@ section,
 }
 .wa-float {
     position: fixed;
-    right: 22px;
-    bottom: 72px;
+    right: 25px;
+    bottom: 122px;
     width: 64px;
     height: 64px;
     z-index: 9999;
@@ -6509,3 +6509,4 @@ section,
       margin: auto;
   }
  
+/* Move Tawk.to above WhatsApp */
