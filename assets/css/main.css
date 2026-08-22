@@ -6510,3 +6510,170 @@ section,
   }
  
 /* Move Tawk.to above WhatsApp */
+/* =========================================================
+   Har's Wellness FAQ Section
+   ========================================================= */
+
+.faq-section {
+  margin-top: 80px;
+  padding-top: 20px;
+}
+
+.faq-section h3 {
+  margin-bottom: 15px;
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.faq-section .section-description {
+  max-width: 750px;
+  margin: 0 auto;
+  line-height: 1.7;
+}
+
+
+/* FAQ Accordion */
+
+.faq-accordion {
+  margin-top: 30px;
+}
+
+.faq-accordion .accordion-item {
+  border: 0;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  overflow: hidden;
+  background: #ffffff;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+}
+
+
+/* Question */
+
+.faq-accordion .accordion-button {
+  position: relative;
+  padding: 22px 25px;
+  background: #ffffff;
+  color: #333333;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.5;
+  box-shadow: none;
+}
+
+
+/* FAQ Number */
+
+.faq-number {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 38px;
+  height: 38px;
+  margin-right: 15px;
+  border-radius: 50%;
+  font-size: 13px;
+  font-weight: 600;
+  flex-shrink: 0;
+}
+
+
+/* Open Question */
+
+.faq-accordion .accordion-button:not(.collapsed) {
+  box-shadow: none;
+}
+
+
+/* Remove Bootstrap default blue focus */
+
+.faq-accordion .accordion-button:focus {
+  box-shadow: none;
+}
+
+
+/* Answer */
+
+.faq-accordion .accordion-body {
+  padding: 0 70px 25px 78px;
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+
+/* Arrow */
+
+.faq-accordion .accordion-button::after {
+  background-size: 14px;
+  transition: transform 0.3s ease;
+}
+
+
+/* Mobile */
+
+@media (max-width: 767px) {
+
+  .faq-section {
+    margin-top: 55px;
+    padding-top: 10px;
+  }
+
+  .faq-section h3 {
+    font-size: 26px;
+  }
+
+  .faq-accordion {
+    margin-top: 25px;
+  }
+
+  .faq-accordion .accordion-button {
+    padding: 18px 16px;
+    font-size: 15px;
+    padding-right: 50px;
+  }
+
+  .faq-number {
+    min-width: 32px;
+    height: 32px;
+    margin-right: 10px;
+    font-size: 12px;
+  }
+
+  .faq-accordion .accordion-body {
+    padding: 0 20px 20px 58px;
+    font-size: 14px;
+    line-height: 1.7;
+  }
+
+}
+
+
+/* Small Mobile */
+
+@media (max-width: 480px) {
+
+  .faq-section h3 {
+    font-size: 24px;
+  }
+
+  .faq-accordion .accordion-button {
+    font-size: 14px;
+    padding: 16px 14px;
+  }
+
+  .faq-number {
+    min-width: 30px;
+    height: 30px;
+    margin-right: 8px;
+  }
+
+  .faq-accordion .accordion-body {
+    padding-left: 52px;
+    padding-right: 16px;
+    font-size: 13px;
+  }
+
+}
+.testi-image{
+  align-items: center;
+}
